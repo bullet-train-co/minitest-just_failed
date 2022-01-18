@@ -34,8 +34,6 @@ class JustFailedTest < ActiveSupport::TestCase
   end
 
   test "failed unit tests are logged to proper file" do
-    skip "This is working locally, but not on CircleCI"
-
     ft = failed_test(:unit)
     @reporter.log_failed_test(ft)
 
@@ -45,8 +43,6 @@ class JustFailedTest < ActiveSupport::TestCase
   end
 
   test "failed system tests are logged to the proper file" do
-    skip "This is working locally, but not on CircleCI"
-
     ft = failed_test(:system)
     @reporter.log_failed_test(ft)
 
