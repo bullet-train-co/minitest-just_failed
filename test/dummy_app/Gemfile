@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# TODO: Remove the git and branch options once we merge this branch.
 ###############################################
 # Add our minitest-just_failed gem for testing
 gem "minitest-just_failed", git: "git@github.com:bullet-train-co/minitest-just_failed.git", branch: "add-initial-code"
