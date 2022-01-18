@@ -80,11 +80,11 @@ class JustFailedTest < ActiveSupport::TestCase
   def log_all_dummy_tests
     clear_failed_tests_log
     File.open(failed_unit_test_log_path, "w+") do |f|
-      f.write("test/failed/logger/dummy_unit_test.rb")
+      f.write("test/dummy_unit_test.rb")
     end
 
     File.open(failed_system_test_log_path, "w+") do |f|
-      f.write("test/failed/logger/dummy_system_test.rb")
+      f.write("test/dummy_system_test.rb")
     end
   end
 
